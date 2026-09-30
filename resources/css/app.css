@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+:root[data-theme='light'] {
+    --app-bg: #f3f8f9;
+    --app-surface: #ffffff;
+    --app-border: #e3edef;
+    --app-text: rgba(0, 0, 0, 0.88);
+    --app-text-muted: rgba(0, 0, 0, 0.45);
+    --app-shadow: 0 6px 24px rgba(21, 50, 67, 0.08);
+    --app-hero-bg: linear-gradient(180deg, #e6f6f9 0%, #f3f8f9 100%);
+    --brand-teal: #1a6c7a;
+    --brand-navy: #153243;
+    --brand-green: #30b666;
+    --brand-mark-bg: linear-gradient(135deg, #1a6c7a 0%, #153243 100%);
+}
+
+:root[data-theme='dark'] {
+    --app-bg: #0b1a22;
+    --app-surface: #11232d;
+    --app-border: #1f3742;
+    --app-text: rgba(255, 255, 255, 0.88);
+    --app-text-muted: rgba(255, 255, 255, 0.45);
+    --app-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
+    --app-hero-bg: radial-gradient(at top, #153243 0%, #0b1a22 70%);
+    --brand-teal: #2a97ab;
+    --brand-mark-bg: linear-gradient(135deg, #2a97ab 0%, #1a6c7a 100%);
+}
+
+body {
+    background: var(--app-bg);
+    color: var(--app-text);
+}
